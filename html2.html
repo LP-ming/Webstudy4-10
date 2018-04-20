@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task5_html</title>
+</head>
+<body>
+    <form action="/getinfo">
+    <div class="username">
+        <label for="">姓名:</label>
+        <input type="text" name="username" placeholder="用户名">
+    </div>
+    <div class="password">
+        <label for="">密码:</label>
+        <input type="password" name="password" placeholder="请输入密码">
+    </div>
+    <div class="sex">
+        <label for="">性别:</label>
+        <input type="radio" name="sex" value="boy">男
+        <input type="radio" name="sex" value="girl">女
+    </div>
+    <div class="ori">
+        <label for="">取向:</label>
+        <input type="radio" name="ori" value="boy">男
+        <input type="radio" name="ori" value="girl">女
+    </div>
+    <div class="hoddy">
+        <label for="">爱好:</label>
+        <input type="checkbox" name="data" value="data">data
+        <input type="checkbox" name="travel" value="travel">旅游
+        <input type="checkbox" name="pet" value="pet">宠物
+    </div>
+    <div class="textarea">
+        <label for="">评论:</label>
+        <textarea name="textarea" id="" cols="30" rows="10" placeholder="ddd"></textarea>
+    </div>
+    <div class="select_car">
+        <label for="">我的car</label>
+        <select name="car" id="">
+            <option value="VW" selected>大众</option>
+            <option value="BMW">宝马</option>
+            <option value="Benz">奔驰</option>
+        </select>
+        <!--<div class="submit">-->
+            <input type="submit" name="submit">
+        <!--</div>-->
+    </div>
+    </form>
+</body>
+</html>
