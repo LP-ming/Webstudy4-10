@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>胎面加工点可视化</title>
+    <style>
+        /*先去掉默认样式 */
+        body,h1,p,ul,li{
+           margin: 0;
+           padding: 0;
+        }
+        /* 去除a链接的下划线 */
+       a{
+           text-decoration: none;
+       }
+       /*  */
+       body{
+            font:16px/1.4 micsoft YaHei;/*字体设定 */
+            background-color:#ffffc0;/*背景色设定 */
+            text-align: center;
+       }
+       /* 将画面顶部的标签在1列显示 */
+       .top>li{
+        display:inline-block;
+        margin-top:10px;
+        margin-bottom: 30px; 
+        vertical-align: bottom;
+       }
+       /*  */
+       .title{
+           font-size:50px;  
+       }
+       /*  */
+       .logo{
+            text-align: right;
+            width: 267px;
+        }
+       /* 将a链接修饰成按钮 */
+       .btn_pagectr{
+           width: 120px;
+           height: 85px;
+           display:inline-block;
+           padding: 50px 50px;
+           color: #000;
+           background-color: #eee;
+           border-radius:10px;
+           border-color: #000;
+           font-size: 30px;
+       }
+       /*将a链接在1列显示  */
+       .btnlist_row>li{
+           display: inline-block;
+           vertical-align: top;
+           margin: 20px 20px;
+       }
+    
+    </style>
+</head>
+<body>
+    <ul class="top">
+        <li><p class="datatime">MM-DD-HH:MM:SS</p></li>
+        <li><h1 class="title">胎面加工点可视化</h1></li>
+        <li><img class="logo" src="http://i4.bvimg.com/643681/c6ecacdb977f10cd.jpg" alt=""></li>
+    </ul>
+    <ul class="btnlist_row">
+        <li><a class="btn_pagectr" href="#">重量&速度曲线图</a></li>
+        <li><a class="btn_pagectr" href="#">押出机数据</a></li>
+        <li><a class="btn_pagectr" href="#">电流&压力&转速</a></li>
+    </ul>
+    <ul class="btnlist_row">
+        <li><a class="btn_pagectr"href="#">加工点一栏</a></li>
+        <li><a class="btn_pagectr"href="#">历史数据查询</a></li>
+        <li><a class="btn_pagectr"href="#">预备</a></li>
+    </ul>
+</body>
+</html>
