@@ -17,13 +17,12 @@
        }
        /*  */
        body{
-            font:16px/1.4 micsoft YaHei;/*字体设定 */
+            font:16px/1.4 'micsoft YaHei';/*字体设定 */
             background-color:#ffffc0;/*背景色设定 */
             text-align: center;
        }
        /* 将画面顶部的标签在1列显示 */
-       .top>li{
-        display:inline-block;
+       .top{
         margin-top:10px;
         margin-bottom: 30px; 
         vertical-align: bottom;
@@ -31,16 +30,19 @@
        /*  */
        .title{
            font-size:50px;  
+           padding-left:30px;
+           padding-right:30px;
        }
        /*  */
        .logo{
-            text-align: right;
+            /* text-align: right; */
+            padding-left:30px;
             width: 267px;
         }
        /* 将a链接修饰成按钮 */
        .btn_pagectr{
            width: 120px;
-           height: 85px;
+           height: 80px;
            display:inline-block;
            padding: 50px 50px;
            color: #000;
@@ -59,11 +61,12 @@
     </style>
 </head>
 <body>
-    <ul class="top">
-        <li><p class="datatime">MM-DD-HH:MM:SS</p></li>
-        <li><h1 class="title">胎面加工点可视化</h1></li>
-        <li><img class="logo" src="http://i4.bvimg.com/643681/c6ecacdb977f10cd.jpg" alt=""></li>
-    </ul>
+    <p class="top">
+        <lable class="datatime">MM-DD-HH:MM:SS</lable>
+        <lable class="title">胎面加工点可视化</lable>
+        <img class="logo" src="http://i4.bvimg.com/643681/c6ecacdb977f10cd.jpg" alt="">
+   </p>
+    
     <ul class="btnlist_row">
         <li><a class="btn_pagectr" href="#">重量&速度曲线图</a></li>
         <li><a class="btn_pagectr" href="#">押出机数据</a></li>
