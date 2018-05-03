@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task9_5</title>
+    <style>
+        /* 去掉下划线 */
+        /* 去掉表格前的点 */
+        /* 该文字颜色 */
+          *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            /* 去掉表格前的点 */
+            list-style:none;
+        }
+        a{
+            /* 去掉下划线 */
+            text-decoration: none;
+            color: #000;
+        }
+        .navbar{
+            width: 600px;
+            margin: 10px auto;
+            background-color:#f1f1f1; 
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+        }
+        .navbar a{
+            padding: 10px;
+            display: block;
+        }
+        .navbar a:hover{
+            background:rgba(0, 0, 0, 0.4);
+        }
+        .navbar1>li{
+            float: left;
+            position: relative;
+        }
+        .navbar1>li:hover .navbar2{
+            display: block;
+        }
+        .navbar1::after{
+          content: '';
+          display: block;
+          clear: both;   
+        }
+        .navbar2{
+            margin-top: 0px;
+            width: 160px;
+            background-color:#fff; 
+            position: absolute;
+            top: 100%;
+            display: none;
+        }  
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <ul class="navbar navbar1">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">作品</a></li>
+        <li>
+            <a href="#">更多</a>
+            <ul class="navbar navbar2">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">知乎</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+    
+</body>
+</html>
