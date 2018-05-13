@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task11_6</title>
+    <style>
+    ul{
+        list-style:none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .layout{
+        width: 700px;
+        height: 100px;
+        background-color: #ccc;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btm-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btm{
+        margin: 5px;
+        padding: 5px 5px;
+        color: #fff;
+        background-color:red;
+        border-radius:4px;
+        float: left;
+       }
+       .btm-bar::after{
+           content: '';
+           display: block;
+           clear: both;
+       }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <ul class="btm-bar">
+        <li><a href="#" class="btm">按钮1</a></li>
+        <li><a href="#" class="btm">按钮2</a></li>
+        <li><a href="#"class="btm">按钮3</a></li>
+    </ul>
+</div>
+</body>
+</html>
