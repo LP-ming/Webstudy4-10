@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task11_2</title>
+    <style>
+        .layout{
+          width: 800px;
+          margin: 0px auto;
+          margin-top: 110px;
+        }
+        .layout{
+          display: flex;
+        }
+        .left{
+          height: 500px;
+          width: 200px;
+          margin-right: 10px;
+          background: red;
+        }
+        .mid{
+          height: 550px;
+          flex:1;
+          background: pink;
+        }
+        .right{
+          height: 500px;
+          width: 200px;
+          margin-left: 10px;
+          background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+         <div class="left">
+          左侧固定宽度
+         </div>
+         <div class="mid">
+         中间
+         </div>
+         <div class="right">
+         右侧自适应
+         </div>
+    </div>
+</body>
+</html>
