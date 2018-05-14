@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task12_3</title>
+    <style>
+    .layout{
+        width: 600px;
+        margin: 20px auto;
+    }
+    .tooltip1{
+        width: 150px;
+        height: 75px;
+        border: 2px solid #ccc;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .bubble1::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 10px transparent solid; 
+        border-bottom: 10px #929292 solid;
+        border-left: 10px transparent solid;
+        border-right: 10px transparent solid;
+        display: inline-block;
+        /* transform: rotateZ(45deg); */
+        position: absolute;
+        top:-20px;
+        left: 5px;
+    }
+    .bubble2::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 10px transparent solid; 
+        border-bottom: 10px red solid;
+        border-left: 10px transparent solid;
+        border-right: 10px transparent solid;
+        display: inline-block;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top:-12px;
+        left: 142px;
+    }
+    .bubble3::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-top: 1px #929292 solid; 
+        /* border-bottom: 10px transparent solid; */
+        border-left: 1px #929292 solid;
+        /* border-right: 10px transparent solid; */
+        display: inline-block;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top:-9px;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="tooltip1 bubble1"></div>
+        <div class="tooltip1 bubble2"></div>
+        <div class="tooltip1 bubble3"></div>
+    </div>
+</body>
+</html>
