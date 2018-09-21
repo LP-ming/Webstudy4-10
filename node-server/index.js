@@ -13,7 +13,7 @@ function staticRoot(staticPath, req, res){
   
   
   if(pathObj.pathname === '/'){
-    pathObj.pathname += 'index.html'
+    pathObj.pathname += 'test.html'
   }
   
 
