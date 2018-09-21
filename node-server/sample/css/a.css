@@ -1,0 +1,54 @@
+        /*先去掉默认样式 */
+        body,h1,p,ul,li{
+           margin: 0;
+           padding: 0;
+        }
+        /* 去除a链接的下划线 */
+       a{
+           text-decoration: none;
+       }
+       /*  */
+       body{
+            font:16px/1.4 'micsoft YaHei';/*字体设定 */
+            background-color:#ffffc0;/*背景色设定 */
+            text-align: center;
+       }
+       /* 将画面顶部的标签在1列显示 */
+       .top{
+        margin-top:10px;
+        margin-bottom: 30px; 
+        vertical-align: bottom;
+       }
+       /*  */
+       .title{
+           font-size:50px;  
+           padding-left:30px;
+           padding-right:30px;
+       }
+       /*  */
+       .logo{
+            /* text-align: right; */
+            padding-left:30px;
+            width: 267px;
+        }
+       /* 将a链接修饰成按钮 */
+       .btn_pagectr{
+           width: 120px;
+           height: 80px;
+           display:inline-block;
+           padding: 50px 50px;
+           color: #000;
+           background-color: #eee;
+           border-radius:10px;
+           border-color: #000;
+           font-size: 30px;
+       }
+       .btn_pagectr:hover{
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+       }
+       /*将a链接在1列显示  */
+       .btnlist_row>li{
+           display: inline-block;
+           vertical-align: top;
+           margin: 20px 20px;
+       }
